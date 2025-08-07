@@ -15,17 +15,6 @@ const CredentialsSection = () => {
       industry: "Software Development",
       duration: "2 weeks",
       dataVolume: "5,000+ records"
-    },
-    {
-      company: "Nedbank",
-      project: "Client Data Validation & Migration",
-      who: "Nedbank is one of the four largest banks in southern Africa, serving 7 million retail and wholesale clients.",
-      what: "A new version of their retail client banking & payment application was developed. All migrated client data had to be cleansed.",
-      how: "Label Ladder's team was trained as subject matter experts and used TestFlight to test the mobile iOS application.",
-      logo: "/images/credentials/nedbank-logo.jpg",
-      industry: "Banking & Finance",
-      duration: "6 weeks",
-      dataVolume: "7M+ client records"
     }
   ];
 
