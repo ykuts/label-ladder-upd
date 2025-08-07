@@ -19,16 +19,8 @@ const structuredData = {
           "@type": "Organization",
           "name": "Label Ladder"
         }
-      },
-      {
-        "@type": "Article", 
-        "headline": "Nedbank Client Data Validation & Migration Case Study",
-        "description": "Label Ladder's successful data validation and mobile app testing for Nedbank's 7 million clients",
-        "author": {
-          "@type": "Organization",
-          "name": "Label Ladder"
-        }
       }
+      
     ]
   };
 
@@ -44,7 +36,7 @@ const structuredData = {
       image: "/images/credentials/adaire.png",
       logo: "/images/credentials/adaire.png"
     },
-    {
+   /*  {
       company: "Nedbank",
       project: "Client Data Validation & Migration",
       description: "Data cleansing and feature testing for one of southern Africa's largest banks' new retail client application.",
@@ -54,7 +46,7 @@ const structuredData = {
       image: "/images/credentials/nedbank.jpg",
       logo: "/images/credentials/nedbank-logo.jpg"
     },
-    /* {
+    {
       company: "Allyship",
       project: "Database Setup",
       description: "Establishing a scalable database schema for a Zürich-based web accessibility company.",
@@ -74,13 +66,13 @@ const structuredData = {
       position: "CTO at Adaire",
       company: "Adaire"
     },
-    {
+    /* {
       quote: "The quality and attention to detail in their data validation process exceeded our expectations. Their team's expertise was invaluable in ensuring our new banking application launched without issues.",
       author: "Sarah Ngombe",
       position: "Head of Digital Banking",
       company: "Nedbank Namibia"
     },
-    /* {
+    {
       quote: "Working with Label Ladder helped us establish a robust database foundation for our accessibility tool. Their understanding of both technical requirements and the purpose of our data was impressive.",
       author: "Lisa Müller",
       position: "Founder",
