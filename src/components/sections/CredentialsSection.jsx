@@ -59,7 +59,7 @@ const CredentialsSection = () => {
       dataVolume: "7M+ client records"
     } */
   ];
-
+  
   return (
     <section className="py-16 md:py-24 bg-gray-50">
       <Container>

@@ -19,16 +19,8 @@ const structuredData = {
           "@type": "Organization",
           "name": "Label Ladder"
         }
-      },
-      {
-        "@type": "Article", 
-        "headline": "Nedbank Client Data Validation & Migration Case Study",
-        "description": "Label Ladder's successful data validation and mobile app testing for Nedbank's 7 million clients",
-        "author": {
-          "@type": "Organization",
-          "name": "Label Ladder"
-        }
       }
+      
     ]
   };
 
