@@ -270,4 +270,4 @@ For technical questions about this website:
 
 ## 📄 License
 
-All rights reserved for Label Ladder. This website code is proprietary to Label Ladder.
+All rights reserved for Label Ladder. This website code is proprietary to Label Ladder...

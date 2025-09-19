@@ -5,20 +5,20 @@ import SectionHeading from '../ui/SectionHeading';
 const AboutSection = () => {
   const features = [
     {
-      title: "HIGH-QUALITY DATA SERVICES",
-      description: "Quality control processes for in-house data labelers ensure accurate and high-quality processed data, avoiding common crowdsourcing inconsistency issues."
+      title: "SCALE & CAPACITY",
+      description: "Our 1,000-strong team in Namibia handles enterprise-volume projects with Swiss quality standards and native English proficiency."
     },
     {
-      title: "SKILLED TALENT POOL",
-      description: "A group of trained and experienced annotators facilitating transformation of raw data to enable the proper functioning of machine-learning systems."
+      title: "MEDICAL EXPERTISE", 
+      description: "Specialized teams for healthcare annotation including radiology, pathology, and clinical documentation with expert oversight."
     },
     {
-      title: "A VENTURE BUILT ON IMPACT",
-      description: "Label Ladder is based on empowerment, where 1,000 Namibians are trained with digital skills, supporting economic development and youth employment."
+      title: "SOCIAL IMPACT MISSION",
+      description: "Training 1,000 Namibians by 2027 in digital skills, supported by Namibian government ministries for sustainable economic development."
     },
     {
-      title: "COST-EFFECTIVE SERVICE",
-      description: "Leveraging a specialized external provider reduces the overhead costs associated with hiring, training, and maintaining an in-house team."
+      title: "SWISS-NAMIBIAN EXCELLENCE",
+      description: "Combining Swiss precision in quality management with Namibian talent and agility for globally competitive solutions."
     }
   ];
 
@@ -26,26 +26,46 @@ const AboutSection = () => {
     <section className="py-16 md:py-24">
       <Container>
         <SectionHeading
-          title="About Label Ladder"
-          subtitle="We are a Swiss-Namibian company with offices in Zürich and Windhoek."
+          title="Why Choose Label Ladder"
+          subtitle="We are a Swiss-Namibian company combining scale with specialization - from high-volume general annotation to expert-led medical services."
           centered
         />
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
           {features.map((feature, index) => (
-            <div key={index} className="p-6 bg-white rounded-lg shadow-md border-t-4 border-secondary">
-              <h3 className="text-xl font-bold text-primary mb-3">{feature.title}</h3>
-              <p className="text-gray-600">
-                {feature.description}
-              </p>
+            <div key={index} className="group">
+              <div className="p-8 bg-white rounded-xl shadow-md hover:shadow-xl border-t-4 border-primary transition-all duration-300">
+                <h3 className="text-xl font-bold text-primary mb-4 group-hover:text-secondary transition-colors">
+                  {feature.title}
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  {feature.description}
+                </p>
+              </div>
             </div>
           ))}
         </div>
         
-        <div className="mt-12 text-center">
-          <Button href="/about" variant="primary" size="lg">
-            Learn More About Us
-          </Button>
+        {/* Call to Action */}
+        <div className="mt-12 bg-gray-50 rounded-xl p-8 text-center">
+          <h3 className="text-2xl font-bold text-primary mb-4">
+            Ready to Experience the Full Spectrum?
+          </h3>
+          <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
+            Whether you need large-scale general annotation or specialized medical expertise, 
+            we have the right solution for your project.
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Button href="/services#general" variant="primary" size="md">
+              General Annotation
+            </Button>
+            <Button href="/services#expert" variant="outline" size="md">
+              Expert Services
+            </Button>
+            <Button href="/about" variant="secondary" size="md">
+              Learn More About Us
+            </Button>
+          </div>
         </div>
       </Container>
     </section>

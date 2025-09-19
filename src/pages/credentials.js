@@ -36,7 +36,27 @@ const structuredData = {
       image: "/images/credentials/adaire.png",
       logo: "/images/credentials/adaire.png"
     },
-   /*  {
+    {
+      company: "Digital Divine Data",
+      project: "Autonomous Driving Annotation",
+      description: "Annotation of images for an autonomous driving project.",
+      who: "Digital Divine Data (DDD) is a specialized data annotation company focusing on AI training datasets.",
+      what: "DDD collaborated with Label Ladder on the annotation of images for an autonomous driving project, requiring precise object detection and classification for vehicle AI systems.",
+      how: "Our expert annotation team provided detailed labeling of road scenes, vehicles, pedestrians, and traffic infrastructure to support autonomous driving algorithm development.",
+      image: "/images/credentials/ddd.webp",
+      logo: "/images/credentials/ddd.webp"
+    },
+    {
+      company: "Ambulanzpartner",
+      project: "Healthcare Data Processing",
+      description: "Data processing and annotation for healthcare applications.",
+      who: "Ambulanzpartner provides emergency medical services and healthcare solutions.",
+      what: "Label Ladder assisted Ambulanzpartner in processing and annotating healthcare data to improve patient care.",
+      how: "Our team ensured high-quality annotations and data processing to meet the specific needs of healthcare applications.",
+      image: "/images/credentials/ambulanzpartner.webp",
+      logo: "/images/credentials/ambulanzpartner.webp"
+    },
+    /* {
       company: "Nedbank",
       project: "Client Data Validation & Migration",
       description: "Data cleansing and feature testing for one of southern Africa's largest banks' new retail client application.",
@@ -45,8 +65,8 @@ const structuredData = {
       how: "Label Ladder's team was trained as subject matter experts and used TestFlight to test the mobile iOS application. All bugs or issues were logged and corrected by the bank's development team. User data was verified and cleaned, and dormant accounts were either verified or deleted.",
       image: "/images/credentials/nedbank.jpg",
       logo: "/images/credentials/nedbank-logo.jpg"
-    },
-    {
+    }, */
+    /* {
       company: "Allyship",
       project: "Database Setup",
       description: "Establishing a scalable database schema for a Zürich-based web accessibility company.",
@@ -71,8 +91,8 @@ const structuredData = {
       author: "Sarah Ngombe",
       position: "Head of Digital Banking",
       company: "Nedbank Namibia"
-    },
-    {
+    }, */
+    /* {
       quote: "Working with Label Ladder helped us establish a robust database foundation for our accessibility tool. Their understanding of both technical requirements and the purpose of our data was impressive.",
       author: "Lisa Müller",
       position: "Founder",
@@ -83,7 +103,7 @@ const structuredData = {
   return (
     <Layout 
       title="Client Case Studies & Success Stories - Label Ladder Credentials"
-      description="Explore Label Ladder's proven track record with real client case studies. See how we've helped Adaire, Nedbank, and other companies with data migration, validation, and processing projects achieving 99.8% accuracy."
+      description="Explore Label Ladder's proven track record with real client case studies. See how we've helped Adaire, Nedbank, and other companies with data migration, validation, and processing projects achieving 98% accuracy."
       keywords="Label Ladder case studies, data annotation success stories, client testimonials, Adaire case study, Nedbank data migration, data processing results, client credentials, project portfolio"
       image="https://labelladder.com/images/og/credentials-og.jpg"
       structuredData={structuredData}
@@ -265,7 +285,7 @@ const structuredData = {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
             <div className="bg-white p-8 rounded-lg shadow-md text-center">
-              <div className="text-4xl font-bold text-primary mb-2">99.8%</div>
+              <div className="text-4xl font-bold text-primary mb-2">98%</div>
               <div className="text-xl font-semibold text-secondary mb-2">Data Accuracy</div>
               <p className="text-gray-600">Our quality control process ensures near-perfect data accuracy across all projects.</p>
             </div>

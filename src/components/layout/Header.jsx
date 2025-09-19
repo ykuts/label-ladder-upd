@@ -13,7 +13,7 @@ const Header = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
-    
+
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -23,8 +23,8 @@ const Header = () => {
   };
 
   const navigation = [
-    { 
-      name: 'About Us', 
+    {
+      name: 'About Us',
       href: '/about',
       submenu: [
         { name: 'Mission', href: '/about#mission' },
@@ -32,14 +32,26 @@ const Header = () => {
       ]
     },
     { name: 'Approach', href: '/approach' },
-    { 
-      name: 'Services', 
+    {
+      name: 'Services',
       href: '/services',
       submenu: [
-        { name: 'All Services', href: '/services' },
-        { name: 'Data Annotation', href: '/services#annotation' },
-        { name: 'Data Processing', href: '/services#processing' }
-      ]
+      { 
+        name: 'Our Services', 
+        href: '/services', 
+        description: 'About Our Services' 
+      },
+      { 
+        name: 'General Data Annotation', 
+        href: '/general-services', 
+        description: 'For Large-Scale Projects' 
+      },
+      { 
+        name: 'Expert & Specialist Annotation', 
+        href: '/expert-services', 
+        description: 'For Medical, etc.' 
+      }
+    ]
     },
     { name: 'Credentials', href: '/credentials' },
   ];
@@ -53,19 +65,19 @@ const Header = () => {
   };
 
   const isHomePage = router.pathname === '/';
-  const headerBg = isHomePage && !isScrolled 
-    ? 'bg-primary' 
+  const headerBg = isHomePage && !isScrolled
+    ? 'bg-primary'
     : 'bg-primary shadow-md';
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${headerBg} ${isScrolled ? 'py-2' : 'py-2'}`}>
       <div className="container flex items-center justify-between">
         <Link href="/" className="relative flex items-center">
-          <Image 
-            src={isHomePage && !isScrolled ? "/images/logo.png" : "/images/logo.png"} 
-            alt="Label Ladder Logo" 
-            width={180} 
-            height={40} 
+          <Image
+            src={isHomePage && !isScrolled ? "/images/logo.png" : "/images/logo.png"}
+            alt="Label Ladder Logo"
+            width={180}
+            height={40}
           />
         </Link>
 
@@ -76,45 +88,49 @@ const Header = () => {
               <li key={item.name} className="relative group">
                 {item.submenu ? (
                   <>
-                    <button
-                      className={`text-base font-medium transition duration-300 flex items-center ${
-                        router.pathname === item.href || router.pathname.startsWith(item.href + '/')
+                    {/* Main link Services - clickable */}
+                    <Link
+                      href={item.href}
+                      className={`text-base font-medium transition duration-300 flex items-center ${router.pathname === item.href || router.pathname.startsWith(item.href + '/')
                           ? 'text-white'
                           : 'text-white hover:text-secondary'
-                      }`}
-                      onClick={() => handleSubmenuToggle(item.name)}
+                        }`}
                     >
                       {item.name}
-                      <svg 
-                        xmlns="http://www.w3.org/2000/svg" 
-                        className="h-4 w-4 ml-1" 
-                        fill="none" 
-                        viewBox="0 0 24 24" 
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-4 w-4 ml-1"
+                        fill="none"
+                        viewBox="0 0 24 24"
                         stroke="currentColor"
                       >
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                       </svg>
-                    </button>
-                    <div className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg overflow-hidden z-10 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300">
+                    </Link>
+
+                    {/* Dropdown shows on hover */}
+                    <div className="absolute left-0 mt-2 w-80 bg-white rounded-md shadow-lg overflow-hidden z-10 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300">
                       {item.submenu.map((subItem) => (
                         <Link
                           key={subItem.name}
                           href={subItem.href}
-                          className="block px-4 py-2 text-sm text-primary hover:bg-gray-100 hover:text-secondary"
+                          className="block px-4 py-3 hover:bg-gray-100 hover:text-secondary border-b border-gray-100 last:border-b-0"
                         >
-                          {subItem.name}
+                          <div className="font-medium text-primary text-sm">{subItem.name}</div>
+                          {subItem.description && (
+                            <div className="text-xs text-gray-500 mt-1">{subItem.description}</div>
+                          )}
                         </Link>
                       ))}
                     </div>
                   </>
                 ) : (
-                  <Link 
+                  <Link
                     href={item.href}
-                    className={`text-base font-medium transition duration-300 ${
-                      router.pathname === item.href
-                        ? 'text-white'
-                        : 'text-white hover:text-secondary'
-                    }`}
+                    className={`text-base font-medium transition duration-300 ${router.pathname === item.href
+                      ? 'text-white'
+                      : 'text-white hover:text-secondary'
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -122,8 +138,8 @@ const Header = () => {
               </li>
             ))}
             <li>
-              <Link 
-                href="/contact" 
+              <Link
+                href="/contact"
                 className="btn btn-secondary"
               >
                 Contact Us
@@ -131,11 +147,11 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-    
+
         {/* Mobile Menu Button */}
-        <button 
-          type="button" 
-          className="md:hidden" 
+        <button
+          type="button"
+          className="md:hidden"
           onClick={toggleMenu}
           aria-label="Toggle menu"
         >
@@ -156,19 +172,18 @@ const Header = () => {
                 {item.submenu ? (
                   <div>
                     <button
-                      className={`flex justify-between items-center w-full px-3 py-2 text-base font-medium ${
-                        router.pathname === item.href || router.pathname.startsWith(item.href + '/')
-                          ? 'text-secondary'
-                          : 'text-primary hover:text-secondary'
-                      }`}
+                      className={`flex justify-between items-center w-full px-3 py-2 text-base font-medium ${router.pathname === item.href || router.pathname.startsWith(item.href + '/')
+                        ? 'text-secondary'
+                        : 'text-primary hover:text-secondary'
+                        }`}
                       onClick={() => handleSubmenuToggle(item.name)}
                     >
                       {item.name}
-                      <svg 
-                        xmlns="http://www.w3.org/2000/svg" 
-                        className={`h-4 w-4 ml-1 transition-transform ${isSubmenuOpen === item.name ? 'rotate-180' : ''}`} 
-                        fill="none" 
-                        viewBox="0 0 24 24" 
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className={`h-4 w-4 ml-1 transition-transform ${isSubmenuOpen === item.name ? 'rotate-180' : ''}`}
+                        fill="none"
+                        viewBox="0 0 24 24"
                         stroke="currentColor"
                       >
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -188,13 +203,12 @@ const Header = () => {
                     </div>
                   </div>
                 ) : (
-                  <Link 
+                  <Link
                     href={item.href}
-                    className={`block px-3 py-2 text-base font-medium ${
-                      router.pathname === item.href
-                        ? 'text-secondary'
-                        : 'text-primary hover:text-secondary'
-                    }`}
+                    className={`block px-3 py-2 text-base font-medium ${router.pathname === item.href
+                      ? 'text-secondary'
+                      : 'text-primary hover:text-secondary'
+                      }`}
                     onClick={() => setIsOpen(false)}
                   >
                     {item.name}
@@ -203,8 +217,8 @@ const Header = () => {
               </li>
             ))}
             <li className="pt-2">
-              <Link 
-                href="/contact" 
+              <Link
+                href="/contact"
                 className="block w-full text-center btn btn-primary"
                 onClick={() => setIsOpen(false)}
               >

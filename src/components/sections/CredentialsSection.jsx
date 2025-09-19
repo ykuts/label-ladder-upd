@@ -14,10 +14,52 @@ const CredentialsSection = () => {
       logo: "/images/credentials/adaire.png",
       industry: "Software Development",
       duration: "2 weeks",
-      dataVolume: "5,000+ records"
-    }
+      dataVolume: "5,000+ records",
+      challenge: "Transitioning to a new project management tool.",
+      solution: "Delivered manual data migration with accuracy checks.",
+      outcome: "Smooth adoption with zero data loss."
+    },
+    {
+      company: "Digital Divine Data",
+      project: "Autonomous Driving Annotation",
+      who: "Digital Divine Data (DDD) is a specialized data annotation company focusing on AI training datasets.",
+      what: "DDD collaborated with Label Ladder on the annotation of images for an autonomous driving project, requiring precise object detection and classification for vehicle AI systems.",
+      how: "Our expert annotation team provided detailed labeling of road scenes, vehicles, pedestrians, and traffic infrastructure to support autonomous driving algorithm development.",
+      logo: "/images/credentials/ddd.webp",
+      industry: "Data Annotation",
+      duration: "2 weeks",
+      dataVolume: "200+ Records",
+      challenge: "Needed to merge tools into one unified workflow.",
+      solution: "Assisted with setup, integration, and testing.",
+      outcome: "Faster onboarding and improved collaboration."
+    },
+    {
+      company: "Ambulanzpartner",
+      project: "Healthcare Data Processing",
+      who: "Ambulanzpartner provides emergency medical services and healthcare solutions.",
+      what: "Label Ladder assisted Ambulanzpartner in processing and annotating healthcare data to improve patient care.",
+      how: "Our team ensured high-quality annotations and data processing to meet the specific needs of healthcare applications.",
+      logo: "/images/credentials/ambulanzpartner.webp",
+      industry: "Healthcare",
+      duration: "2 weeks",
+      dataVolume: "10,000+ records",
+      challenge: "Large amounts of patient data with inconsistent records.",
+      solution: "Cleaned, validated, and standardized datasets.",
+      outcome: "Reliable reporting and better decision-making."
+    },
+    /* {
+      company: "Nedbank",
+      project: "Client Data Validation & Migration",
+      who: "Nedbank is one of the four largest banks in southern Africa, serving 7 million retail and wholesale clients.",
+      what: "A new version of their retail client banking & payment application was developed. All migrated client data had to be cleansed.",
+      how: "Label Ladder's team was trained as subject matter experts and used TestFlight to test the mobile iOS application.",
+      logo: "/images/credentials/nedbank-logo.jpg",
+      industry: "Banking & Finance",
+      duration: "6 weeks",
+      dataVolume: "7M+ client records"
+    } */
   ];
-
+  
   return (
     <section className="py-16 md:py-24 bg-gray-50">
       <Container>
@@ -50,24 +92,34 @@ const CredentialsSection = () => {
                   </div>
                 </div>
                 <h4 className="font-semibold text-secondary mb-2">{caseStudy.project}</h4>
+                <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                  {caseStudy.what}
+                </p>
               </div>
 
               {/* Project Details */}
               <div className="p-6">
                 <div className="grid grid-cols-2 gap-4 mb-4">
-                  <div className="text-left">
+                  {/* <div className="text-left">
                     <div className="text-lg font-bold text-primary">{caseStudy.duration}</div>
                     <div className="text-xs text-gray-500">Duration</div>
+                  </div> */}
+
+                  <div className="text-left">
+                    <div className="text-lg font-bold text-primary">Challenge</div>
+                    <div className="text-xs text-gray-500">{caseStudy.challenge}</div>
                   </div>
                   <div className="text-left">
-                    <div className="text-lg font-bold text-primary">{caseStudy.dataVolume}</div>
-                    <div className="text-xs text-gray-500">Data Volume</div>
+                    <div className="text-lg font-bold text-primary">Solution</div>
+                    <div className="text-xs text-gray-500">{caseStudy.solution}</div>
                   </div>
+                  {/* <div className="text-left">
+                    <div className="text-lg font-bold text-primary">Outcome</div>
+                    <div className="text-xs text-gray-500">{caseStudy.outcome}</div>
+                  </div> */}
                 </div>
                 
-                <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                  {caseStudy.what}
-                </p>
+                
                 
               </div>
             </div>

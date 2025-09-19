@@ -240,7 +240,7 @@ export default function About() {
                 Label Ladder Academy
               </h3> */}
                             <p className="text-gray-600 mb-6">
-                                Our project is supported by the Namibian <strong>Ministry of Information, Communication & Technology</strong>, and the <strong>Ministry of Sport, Youth and National Service</strong>.
+                                Our project is supported by the Namibian <strong>Ministry of Education, Innovation, Youth, Sports, Arts and Culture</strong>.
                             </p>
                             <p className="text-gray-600 mb-6">
                                 Through our <strong>Label Ladder Academy</strong> program, we guarantee our employees a pathway to growth and employability in a <strong>globally competitive industry</strong>.
