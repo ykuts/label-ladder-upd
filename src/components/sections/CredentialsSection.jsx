@@ -47,6 +47,21 @@ const CredentialsSection = () => {
       solution: "Cleaned, validated, and standardized datasets.",
       outcome: "Reliable reporting and better decision-making."
     },
+
+    {
+      company: "Impact Tank",
+      project: "Data Pipeline Setup",
+      who: "Impact Tank is a Namibian-Swiss impact venture builder focused on social impact through data-driven solutions and community development in Africa.",
+      what: "Impact Tank required a robust data pipeline to support their wildlife conservation project, enabling efficient data collection, processing, and analysis for environmental impact monitoring.",
+      how: "Label Ladder's team designed and implemented a comprehensive data pipeline architecture for wildlife conservation data, including automated data ingestion, processing workflows, and analytics capabilities.",
+      logo: "/images/credentials/impact-tank-logo.png",
+      industry: "Social Impact/Conservation",
+      duration: "6 weeks",
+      dataVolume: "Environmental monitoring data streams",
+      challenge: "Need for scalable data infrastructure to support wildlife conservation efforts and impact measurement.",
+      solution: "Implemented automated data pipeline with real-time processing and analytics capabilities.",
+      outcome: "Enhanced conservation monitoring and data-driven decision making for community impact projects."
+    } ,
     /* {
       company: "Nedbank",
       project: "Client Data Validation & Migration",

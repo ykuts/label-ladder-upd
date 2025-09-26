@@ -56,6 +56,17 @@ const structuredData = {
       image: "/images/credentials/ambulanzpartner.webp",
       logo: "/images/credentials/ambulanzpartner.webp"
     },
+
+    {
+      company: "Impact Tank",
+      project: "Data Pipeline Setup",
+      description: "Designed and implemented data pipeline for a wildlife conservation project.",
+      who: "Impact Tank is a Namibian-Swiss impact venture builder focused on social impact through data-driven solutions and community development in Africa.",
+      what: "Impact Tank required a robust data pipeline to support their wildlife conservation project, enabling efficient data collection, processing, and analysis for environmental impact monitoring.",
+      how: "Label Ladder's team designed and implemented a comprehensive data pipeline architecture for wildlife conservation data, including automated data ingestion, processing workflows, and analytics capabilities.",
+      image: "/images/credentials/impact-tank-logo.png",
+      logo: "/images/credentials/impact-tank-logo.png"
+    },
     /* {
       company: "Nedbank",
       project: "Client Data Validation & Migration",
