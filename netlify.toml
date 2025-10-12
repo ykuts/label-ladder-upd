@@ -6,6 +6,12 @@
   NODE_VERSION = "18"
 
 [[redirects]]
+  from = "http://labelladder.com/*"
+  to = "https://labelladder.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/_next/*"
   to = "/_next/:splat"
   status = 200

@@ -63,7 +63,7 @@ const ServicesOverviewSection = () => {
         </div>
         
         <div className="mt-12 text-center">
-          <Button href="/services" variant="primary" size="lg">
+          <Button href="/services/" variant="primary" size="lg">
             View All Services
           </Button>
         </div>

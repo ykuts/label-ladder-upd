@@ -114,7 +114,7 @@ const ExpertAnnotationSection = () => {
 
         {/* CTA */}
         <div className="mt-12 text-center">
-          <Button href="/contact" variant="primary" size="lg">
+          <Button href="/contact/" variant="primary" size="lg">
             Discuss Your Specialized Needs
           </Button>
         </div>

@@ -33,17 +33,17 @@ const Footer = () => {
             <h3 className="text-lg font-bold text-white mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/about" className="text-accent hover:text-white transition text-sm">
+                <Link href="/about/" className="text-accent hover:text-white transition text-sm">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/approach" className="text-accent hover:text-white transition text-sm">
+                <Link href="/approach/" className="text-accent hover:text-white transition text-sm">
                   Our Approach
                 </Link>
               </li>
               <li>
-                <Link href="/credentials" className="text-accent hover:text-white transition text-sm">
+                <Link href="/credentials/" className="text-accent hover:text-white transition text-sm">
                   Credentials
                 </Link>
               </li>
@@ -55,12 +55,12 @@ const Footer = () => {
             <h3 className="text-lg font-bold text-white mb-4">Services</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/general-services" className="text-accent hover:text-white transition text-sm">
+                <Link href="/general-services/" className="text-accent hover:text-white transition text-sm">
                   General Data Annotation
                 </Link>
               </li>
               <li>
-                <Link href="/expert-services" className="text-accent hover:text-white transition text-sm">
+                <Link href="/expert-services/" className="text-accent hover:text-white transition text-sm">
                   Expert & Specialist Annotation
                 </Link>
               </li>
@@ -92,7 +92,7 @@ const Footer = () => {
             {/* CTA Button */}
             <div className="mt-4">
               <Link
-                href="/contact"
+                href="/contact/"
                 className="inline-block bg-secondary hover:bg-secondary/90 text-white px-4 py-2 rounded-md text-sm font-medium transition"
               >
                 Start Your Project
@@ -131,17 +131,17 @@ const Footer = () => {
               <h3 className="text-lg font-bold text-white mb-3">Quick Links</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link href="/about" className="text-accent hover:text-white transition text-sm">
+                  <Link href="/about/" className="text-accent hover:text-white transition text-sm">
                     About Us
                   </Link>
                 </li>
                 <li>
-                  <Link href="/approach" className="text-accent hover:text-white transition text-sm">
+                  <Link href="/approach/" className="text-accent hover:text-white transition text-sm">
                     Our Approach
                   </Link>
                 </li>
                 <li>
-                  <Link href="/credentials" className="text-accent hover:text-white transition text-sm">
+                  <Link href="/credentials/" className="text-accent hover:text-white transition text-sm">
                     Credentials
                   </Link>
                 </li>
@@ -153,12 +153,12 @@ const Footer = () => {
               <h3 className="text-lg font-bold text-white mb-3">Services</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link href="/general-services" className="text-accent hover:text-white transition text-sm">
+                  <Link href="/general-services/" className="text-accent hover:text-white transition text-sm">
                     General Data Annotation
                   </Link>
                 </li>
                 <li>
-                  <Link href="/expert-services" className="text-accent hover:text-white transition text-sm">
+                  <Link href="/expert-services/" className="text-accent hover:text-white transition text-sm">
                     Expert & Specialist Annotation
                   </Link>
                 </li>
@@ -191,7 +191,7 @@ const Footer = () => {
             {/* CTA Button + Social */}
             <div className="flex items-center justify-between">
               <Link
-                href="/contact"
+                href="/contact/"
                 className="inline-block bg-secondary hover:bg-secondary/90 text-white px-4 py-2 rounded-md text-sm font-medium transition"
               >
                 Start Your Project

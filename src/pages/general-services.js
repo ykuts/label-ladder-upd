@@ -634,7 +634,7 @@ export default function Services() {
                 <p className="text-gray-600 mb-8">
                   Whether you need a combination of services, specialized domain expertise, or a completely unique workflow, we can design a solution that meets your needs.
                 </p>
-                <Button href="/contact" variant="primary" size="lg">
+                <Button href="/contact/" variant="primary" size="lg">
                   Request Custom Quote
                 </Button>
               </div>
@@ -661,7 +661,7 @@ export default function Services() {
             <p className="text-xl mb-8 text-accent">
               Contact us today to discuss your data annotation and processing needs and get a customized quote.
             </p>
-            <Button href="/contact" variant="white" size="lg">
+            <Button href="/contact/" variant="white" size="lg">
               Start Your Project
             </Button>
           </div>

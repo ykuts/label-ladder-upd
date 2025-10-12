@@ -80,10 +80,10 @@ const HeroSection = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-wrap justify-center gap-4">
-            <Button href="/services" variant="secondary" size="lg" className="w-48 sm:w-auto">
+            <Button href="/services/" variant="secondary" size="lg" className="w-48 sm:w-auto">
               Our Services
             </Button>
-            <Button href="/contact" variant="outline" size="lg" className="text-white border-white hover:bg-white/10 w-48 sm:w-auto">
+            <Button href="/contact/" variant="outline" size="lg" className="text-white border-white hover:bg-white/10 w-48 sm:w-auto">
               Contact Us
             </Button>
           </div>

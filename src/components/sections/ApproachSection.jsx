@@ -52,7 +52,7 @@ const ApproachSection = () => {
         </div>
         
         <div className="mt-12 text-center">
-          <Button href="/approach" variant="primary" size="lg">
+          <Button href="/approach/" variant="primary" size="lg">
             Learn More About Our Approach
           </Button>
         </div>

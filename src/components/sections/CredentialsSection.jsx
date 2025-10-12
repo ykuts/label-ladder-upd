@@ -143,7 +143,7 @@ const CredentialsSection = () => {
         
                 
         <div className="mt-12 text-center">
-          <Button href="/credentials" variant="primary" size="lg">
+          <Button href="/credentials/" variant="primary" size="lg">
             View All Case Studies
           </Button>
         </div>

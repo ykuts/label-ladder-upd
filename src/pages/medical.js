@@ -138,7 +138,7 @@ export default function Medical() {
               <Button href="#services" variant="white" size="lg">
                 View Medical Services
               </Button>
-              <Button href="/contact" variant="outline" className="text-white border-white hover:bg-white/10" size="lg">
+              <Button href="/contact/" variant="outline" className="text-white border-white hover:bg-white/10" size="lg">
                 Discuss Your Project
               </Button>
             </div>
@@ -211,7 +211,7 @@ export default function Medical() {
                       ))}
                     </div>
                     
-                    <Button href="/contact" variant="primary" size="md">
+                    <Button href="/contact/" variant="primary" size="md">
                       Get Started
                     </Button>
                   </div>
@@ -246,10 +246,10 @@ export default function Medical() {
               compliance, and clinical expertise.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Button href="/contact" variant="white" size="lg">
+              <Button href="/contact/" variant="white" size="lg">
                 Start Your Medical Project
               </Button>
-              <Button href="/services" variant="outline" className="text-white border-white hover:bg-white/10" size="lg">
+              <Button href="/services/" variant="outline" className="text-white border-white hover:bg-white/10" size="lg">
                 View All Services
               </Button>
             </div>

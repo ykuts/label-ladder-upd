@@ -93,7 +93,7 @@ const WhyChooseSection = () => {
             <Button href="/services#expert" variant="secondary" size="md">
               Expert-Led Annotation
             </Button>
-            <Button href="/contact" variant="outline" className="text-white border-white hover:bg-white/10" size="md">
+            <Button href="/contact/" variant="outline" className="text-white border-white hover:bg-white/10" size="md">
               Get Started
             </Button>
           </div>

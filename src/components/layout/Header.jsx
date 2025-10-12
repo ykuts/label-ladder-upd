@@ -25,35 +25,35 @@ const Header = () => {
   const navigation = [
     {
       name: 'About Us',
-      href: '/about',
+      href: '/about/',
       submenu: [
         { name: 'Mission', href: '/about#mission' },
         { name: 'Meet the Team', href: '/about#team' }
       ]
     },
-    { name: 'Approach', href: '/approach' },
+    { name: 'Approach', href: '/approach/' },
     {
       name: 'Services',
-      href: '/services',
+      href: '/services/',
       submenu: [
       { 
         name: 'Our Services', 
-        href: '/services', 
+        href: '/services/', 
         description: 'About Our Services' 
       },
       { 
         name: 'General Data Annotation', 
-        href: '/general-services', 
+        href: '/general-services/', 
         description: 'For Large-Scale Projects' 
       },
       { 
         name: 'Expert & Specialist Annotation', 
-        href: '/expert-services', 
+        href: '/expert-services/', 
         description: 'For Medical, etc.' 
       }
     ]
     },
-    { name: 'Credentials', href: '/credentials' },
+    { name: 'Credentials', href: '/credentials/' },
   ];
 
   const handleSubmenuToggle = (name) => {
@@ -139,7 +139,7 @@ const Header = () => {
             ))}
             <li>
               <Link
-                href="/contact"
+                href="/contact/"
                 className="btn btn-secondary"
               >
                 Contact Us

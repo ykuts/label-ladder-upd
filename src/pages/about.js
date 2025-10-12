@@ -387,7 +387,7 @@ export default function About() {
                         <p className="text-xl mb-8 text-accent">
                             Contact us today to learn more about how Label Ladder can help with your data annotation and processing needs.
                         </p>
-                        <Button href="/contact" variant="white" size="lg">
+                        <Button href="/contact/" variant="white" size="lg">
                             Get in Touch
                         </Button>
                     </div>

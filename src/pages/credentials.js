@@ -239,7 +239,7 @@ const structuredData = {
                 </div>
                 
                 <div className="mt-8">
-                  <Button href="/contact" variant="outline">
+                  <Button href="/contact/" variant="outline">
                     Get Similar Results
                   </Button>
                 </div>
@@ -352,10 +352,10 @@ const structuredData = {
               Contact us today to discuss how we can help transform your data challenges into business advantages.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Button href="/contact" variant="white" size="lg">
+              <Button href="/contact/" variant="white" size="lg">
                 Contact Us
               </Button>
-              <Button href="/services" variant="outline" className="text-white border-white hover:bg-white/10" size="lg">
+              <Button href="/services/" variant="outline" className="text-white border-white hover:bg-white/10" size="lg">
                 View Services
               </Button>
             </div>

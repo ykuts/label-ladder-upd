@@ -62,7 +62,7 @@ const AboutSection = () => {
             <Button href="/services#expert" variant="outline" size="md">
               Expert Services
             </Button>
-            <Button href="/about" variant="secondary" size="md">
+            <Button href="/about/" variant="secondary" size="md">
               Learn More About Us
             </Button>
           </div>

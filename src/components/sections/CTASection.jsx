@@ -12,7 +12,7 @@ const CTASection = () => {
           <p className="text-xl mb-8 text-accent">
             Let us help you transform your data into a powerful asset that drives smarter decisions, streamlined operations, and real competitive edge.
           </p>
-          <Button href="/contact" variant="white" size="lg">
+          <Button href="/contact/" variant="white" size="lg">
             Contact Us Today
           </Button>
         </div>

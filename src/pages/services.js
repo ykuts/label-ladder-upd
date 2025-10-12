@@ -156,7 +156,7 @@ export default function Services() {
             </div>
 
             <div className="mt-8 text-center">
-              <Button href="/contact" variant="primary" size="lg">
+              <Button href="/contact/" variant="primary" size="lg">
                 Discuss Medical Annotation Needs
               </Button>
             </div>
@@ -232,10 +232,10 @@ export default function Services() {
                 </div>
               </div>
               
-              <Button href="/general-services" variant="white" size="lg" className="w-full mb-4">
+              <Button href="/general-services/" variant="white" size="lg" className="w-full mb-4">
                 View General Services Details
               </Button>
-              <Button href="/contact" variant="outline" className="w-full text-white border-white hover:bg-white/10" size="md">
+              <Button href="/contact/" variant="outline" className="w-full text-white border-white hover:bg-white/10" size="md">
                 Get Quote for General Project
               </Button>
             </div>
@@ -283,10 +283,10 @@ export default function Services() {
                 </div>
               </div>
               
-              <Button href="/expert-services" variant="white" size="lg" className="w-full mb-4">
+              <Button href="/expert-services/" variant="white" size="lg" className="w-full mb-4">
                 View Expert Services Details
               </Button>
-              <Button href="/contact" variant="outline" className="w-full text-white border-white hover:bg-white/10" size="md">
+              <Button href="/contact/" variant="outline" className="w-full text-white border-white hover:bg-white/10" size="md">
                 Discuss Medical Project
               </Button>
             </div>
@@ -305,7 +305,7 @@ export default function Services() {
               Our team can help you determine the right approach for your project. 
               Whether it&lsquo;s volume or expertise you need, we&lsquo;ll guide you to the best solution.
             </p>
-            <Button href="/contact" variant="primary" size="lg">
+            <Button href="/contact/" variant="primary" size="lg">
               Get Consultation
             </Button>
           </div>

@@ -255,7 +255,7 @@ const structuredData = {
             <p className="text-xl mb-8 text-accent">
               Not just &quot;labelled data&quot;, but a strategic data asset that powers long-term machine learning and operational success.
             </p>
-            <Button href="/contact" variant="white" size="lg">
+            <Button href="/contact/" variant="white" size="lg">
               Start Your Project
             </Button>
           </div>
