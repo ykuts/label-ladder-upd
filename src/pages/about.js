@@ -62,11 +62,31 @@ export default function About() {
             role: 'Operations',
             image: '/images/team/klaudia.png',
         },
+        
+    ];
+
+const advisors = [
         {
             name: 'Elzine Mushambi',
-            role: 'Co-founder & Advisor',
+            role: 'Emerging Markets',
             image: '/images/team/elzine.png',
         },
+        {
+            name: 'Christoph Buchli',
+            role: 'Strategy & Tech',
+            image: '/images/team/christoph.jpg',
+        },
+        {
+            name: 'Jocelyne Kuhn',
+            role: 'Sales & Marketing',
+            image: '/images/team/jocelyne.jpeg',
+        },
+        {
+            name: 'Marcel Blattner, PhD',
+            role: 'Data & AI',
+            image: '/images/team/marcel.jpg',
+        },
+        
     ];
 
     const labelers = [
@@ -327,7 +347,7 @@ export default function About() {
                         centered
                     />
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 mt-12">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
                         {team.map((member, index) => (
                             <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
                                 <div className="relative aspect-square">
@@ -346,6 +366,34 @@ export default function About() {
                                 </div>
                             </div>
                         ))}
+                    </div>
+
+                    <div className="mt-16">
+                        <SectionHeading
+                            title="Advisory Board"
+                            subtitle="Experienced advisors guiding our strategic vision and growth."
+                            centered
+                        />
+
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+                            {advisors.map((advisor, index) => (
+                                <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
+                                    <div className="relative aspect-square">
+                                        <Image
+                                            src={advisor.image}
+                                            alt={advisor.name}
+                                            fill
+                                            className="object-contain"
+                                            sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 12.5vw"
+                                        />
+                                    </div>
+                                    <div className="p-4 text-center">
+                                    <h3 className="text-xl font-bold text-primary">{advisor.name}</h3>
+                                    <p className="text-gray-600">{advisor.role}</p>
+                                </div>
+                                </div>
+                            ))}
+                        </div>
                     </div>
 
                     <div className="mt-16">
